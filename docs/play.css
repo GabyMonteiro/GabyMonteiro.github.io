@@ -1,0 +1,299 @@
+/* This stylesheet is where to add styles for your Shakespeare Play */
+/*We usually add something general for the body*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 100px;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 2px;
+  right: 8px;
+  opacity: 0.9;
+}
+
+.backtotop a {
+  text-decoration: none;
+  font-size: 3em;
+  color: white;
+}
+
+.backtotop a:hover {
+  color: wheat;
+}
+
+.AmericanTypewriter {
+  font-family: "American Typewriter", monospace;
+}
+
+.caption {
+  text-align: center; 
+  background-color: white;
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 750px;
+}
+
+body {
+  font-family: 'Roboto Serif', sans-serif;
+  background-color: #1d203a;
+ 
+
+  /*your style rules go in here */
+}
+
+section.nav {
+  /* this is where your nav list items will be */
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  flex: 0 0 8rem; /*the same as flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: #734c74;
+  
+}
+nav ul li a:hover {
+  color: wheat;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color: #643b65;
+}
+
+li.home {
+margin-right: auto;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 8rem; /* the same as the value for flex-basis on the parent li */
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #643b65;
+}
+
+section {
+  border: 0;
+}
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+section.dramatis {
+  width: 70%;
+  margin: 12px auto;
+  border: 2px solid #643b65;
+  padding: 20px;
+  background-color: white;
+  width: 70%;
+  margin: 100px auto 20px;
+  padding: 10px;
+  max-width: 1200px;
+  text-align: center;
+  line-height: 1.5;
+  
+}
+
+h1.title {
+  color: #643b65;
+  font-style: italic;
+  font-size: 26px;
+}
+
+img {
+  max-width: 60%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  flex-basis: auto;
+  box-sizing: border-box;
+
+}
+
+
+section.caption {
+  text-align: center;
+  border: 2px solid #643b65;
+}
+
+section.play {
+  background-color: white;
+  border: 2px solid #643b65;
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 1200px;
+
+}
+div.sceneImage {
+}
+h1.act {
+  text-align: center;
+  font-family: "American Typewriter", monospace;
+  font-weight: bold;
+  color: white;
+  background-color: #643b65;
+  margin: 12px auto;
+  padding: 20px;
+}
+p.character {
+  font-weight: bold;
+  font-style: italic;
+  color: black
+}
+p.charactername {
+  
+}
+h1.dramatishead {
+}
+h2.firstscene {
+}
+
+h2.firstscene, .scene {
+  text-align: center;
+  color: white;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #643b65;
+}
+
+h2.location {
+  font-size: 18px;
+}
+p.play_location {
+  font-size: 16px;
+}
+p.prose {
+  margin: 0 0 0.4em 8em;
+  font-size: 16px;
+  line-height: 2;
+}
+h2.scene {
+}
+p.song {
+}
+h2.stagedirection {
+  font-size: 16px;
+  padding: 10px;
+  font-style: italic;
+  font-weight: lighter;
+}
+.verseline {
+  margin: 0 0 0.4em 8em;
+  font-size: 16px;
+  line-height: 2;
+}
+span.character_role {
+
+}
+span.stage_directions_inline {
+  font-size: 16px;
+  
+}
+
+span.character_beforespeech {
+}
+
+@media screen and (max-width: 800px) {
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  /*   ~ the tilda points to the next sibling selector */
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+
+  li ul {
+    position: static;
+  }
+  nav ul li {
+    flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+
+  html {
+    font-size: 12px;
+    padding: 1em 3em;
+    scroll-padding-top: 250px;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  .balancetext {
+    font-size: 12px;
+    padding: 1em 3em;
+  }
+
+  h2.stagedirection {
+    font-size: 12px;
+    padding: 1em 3em;
+  }
+
+  .play,.dramatis, .verseline, .prose, p.play_location, p.prose, p.charactername, h2.scene, span.stage_directions_inline, h2.location, div.sceneImage {
+    font-size: 12px;
+    padding: 1em 3em;
+  }
+  
+}

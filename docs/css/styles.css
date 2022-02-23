@@ -83,24 +83,36 @@ span.character_beforespeech {
     box-sizing: border-box;
 }
 
-.AmericanTypewriter {
-    font-family: "American Typewriter", monospace;
-  }
-
-body {
-     font-family: 'Roboto Serif', sans-serif;
-     background-color: #030514;
-    }
-h1{ 
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-family: 'Roboto Serif', sans-serif;
-    font-style: oblique;
-    font-size: 40px;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
+.AmericanTypewriter {
+  font-family: "American Typewriter", monospace;
+}
+
+body {
+   font-family: 'Roboto Serif', sans-serif;
+   background-color: #030514;
+  }
+h1{ 
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: 'Roboto Serif', sans-serif;
+  font-style: oblique;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 22px;
+}
 
 
 
@@ -115,61 +127,69 @@ background-color: white;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 ul {
-    line-height: 1.5;
-    font-size: 18px;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
 img {
-    width: 100%;
-    }
+  width: 100%;
+  }
 
 figure {
-    width: 100%;
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin: .5rem;
+  width: 100%;
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: .5rem;
 }
 
 section {
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin: .5rem;
-    background-color: #643b65;
-    color: white;
-    padding: 8px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: .5rem;
+  background-color: #643b65;
+  color: white;
+  padding: 8px;
 
+}
+
+.playlink {
+  text-align: center;
+  color: white;
+  border: 2px solid 030514;
+  background-color: white;
+  padding: 20px;
 }
 
 footer {
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    padding: 20px;
-    
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  
 }
 
 @media only screen and (max-width: 600px) {
-    main {
-        width: 100%;
-        padding: 0;
-        border: none;
-    }
+  main {
+      width: 100%;
+      padding: 0;
+      border: none;
+  }
 
-    ul {
-        font-size: .9em;
-    }
+  ul {
+      font-size: .9em;
+  }
 
-    main {
-        max-width: 50%;
-    }
+  main {
+      max-width: 50%;
+  }
 
-    p { 
-        font-size: .9em;
-    }
+  p { 
+      font-size: .9em;
+  }
 }
